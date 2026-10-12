@@ -1,0 +1,82 @@
+{
+  "name": "Sebastian Rodrigo Rabanal Francia",
+  "username": "CoreCodev",
+  "github_username": "CoreCodev618",
+  "location": "Lima, Perú",
+  "role": "Estudiante de Ingeniería de Sistemas (UNAC)",
+  "focus": "Desarrollo Full-Stack + IA",
+  "bio": "Enfocado en desarrollo en general, con pasión por la inteligencia artificial, agentes autónomos, modelos de lenguaje, sistemas RAG, y herramientas modernas como OpenCode y ClaudeCode. Combino pensamiento lógico con visión estratégica para crear soluciones innovadoras.",
+  "email": "sebastianrabanala34@gmail.com",
+  "linkedin": "https://linkedin.com/in/sebastianrabanalfrancia",
+  "portfolio": "https://github.com/CoreCodev618",
+  "avatar_url": "https://avatars.githubusercontent.com/u/CoreCodev618",
+  "stats": {
+    "total_stars": 0,
+    "total_commits": 0,
+    "total_repos": 0,
+    "followers": 0,
+    "following": 0,
+    "contribution_year": 2025
+  },
+  "languages": {
+    "Python": 85,
+    "JavaScript": 78,
+    "HTML": 90,
+    "CSS": 82,
+    "SQL": 75,
+    "Rust": 45,
+    "Java": 60
+  },
+  "stack": {
+    "languages": ["Python", "JavaScript", "Rust", "HTML", "CSS", "SQL"],
+    "frontend": ["React", "Ember", "HTML", "CSS"],
+    "databases": ["PostgreSQL", "MySQL", "SQL Server"],
+    "cloud_data": ["AWS Glue", "LakeHouse", "Athena"],
+    "erp": ["Odoo"],
+    "ai": ["OpenCode", "ClaudeCode", "RAGs", "MCP", "LLMs", "Agentes"],
+    "tools": ["Git/GitHub", "Docker"]
+  },
+  "projects": [
+    {
+      "name": "NASA Space Apps Challenge 2025",
+      "description": "Desarrollo front-end de interfaz interactiva y atractiva para usuario. Hackathon en Lima, Perú.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "year": "2025",
+      "highlight": true
+    },
+    {
+      "name": "Torneo Peruano de Programación (TPP)",
+      "description": "Participante competitivo. Demostración de habilidades avanzadas en resolución de problemas y algoritmos bajo presión.",
+      "tech": ["Algoritmos", "Problem Solving"],
+      "year": "2025",
+      "highlight": true
+    },
+    {
+      "name": "CTIC UNI - Ciencia de Datos",
+      "description": "Formación en Ciencia de Datos, Ethical Hacking, Power BI, SQL Server.",
+      "tech": ["Power BI", "SQL Server", "Ethical Hacking"],
+      "year": "2024",
+      "highlight": true
+    },
+    {
+      "name": "Netzun",
+      "description": "Desarrollo web con stack completo incluyendo frontend, backend y base de datos.",
+      "tech": ["HTML", "CSS", "JavaScript", "Python", "PostgreSQL", "Git/GitHub"],
+      "year": "2025-2026",
+      "highlight": true
+    }
+  ],
+  "soft_skills": [
+    "Innovación",
+    "Creatividad",
+    "Disciplina",
+    "Autonomía",
+    "Adaptabilidad"
+  ],
+  "education": {
+    "university": "Universidad Nacional del Callao (UNAC)",
+    "degree": "Ingeniería de Sistemas (5to año)",
+    "period": "2024 - 2029",
+    "english": "Instituto Cultural Peruano Británico - Nivel Avanzado"
+  }
+}

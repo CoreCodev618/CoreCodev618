@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="394" viewBox="0 0 700 394" font-family="JetBrains Mono, Fira Code, monospace">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#12121a"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="394" fill="url(#bg)" rx="12"/>
+  <text x="20" y="35" fill="#00f0ff" font-size="16" font-family="monospace" font-weight="bold">$ CoreCodev/stack</text>
+  <line x1="20" y1="50" x2="680" y2="50" stroke="#1e1e2e" stroke-width="1"/>
+  
+    <text x="20" y="78" fill="#e0e0e0" font-size="12" font-family="monospace">HTML</text>
+    <rect x="180" y="60" width="450" height="24" rx="4" fill="#1e1e2e"/>
+    <rect x="180" y="60" width="0" height="24" rx="4" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="width" from="0" to="405.0" dur="2s" begin="0.0s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+    <text x="640" y="78" fill="#00f0ff" font-size="11" font-family="monospace" text-anchor="end" opacity="0">
+      90%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.0s" fill="freeze"/>
+    </text>
+    <text x="20" y="120" fill="#e0e0e0" font-size="12" font-family="monospace">Python</text>
+    <rect x="180" y="102" width="450" height="24" rx="4" fill="#1e1e2e"/>
+    <rect x="180" y="102" width="0" height="24" rx="4" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="width" from="0" to="382.5" dur="2s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+    <text x="640" y="120" fill="#00f0ff" font-size="11" font-family="monospace" text-anchor="end" opacity="0">
+      85%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.15s" fill="freeze"/>
+    </text>
+    <text x="20" y="162" fill="#e0e0e0" font-size="12" font-family="monospace">CSS</text>
+    <rect x="180" y="144" width="450" height="24" rx="4" fill="#1e1e2e"/>
+    <rect x="180" y="144" width="0" height="24" rx="4" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="width" from="0" to="369.0" dur="2s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+    <text x="640" y="162" fill="#00f0ff" font-size="11" font-family="monospace" text-anchor="end" opacity="0">
+      82%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.3s" fill="freeze"/>
+    </text>
+    <text x="20" y="204" fill="#e0e0e0" font-size="12" font-family="monospace">JavaScript</text>
+    <rect x="180" y="186" width="450" height="24" rx="4" fill="#1e1e2e"/>
+    <rect x="180" y="186" width="0" height="24" rx="4" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="width" from="0" to="351.0" dur="2s" begin="0.44999999999999996s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+    <text x="640" y="204" fill="#00f0ff" font-size="11" font-family="monospace" text-anchor="end" opacity="0">
+      78%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.45s" fill="freeze"/>
+    </text>
+    <text x="20" y="246" fill="#e0e0e0" font-size="12" font-family="monospace">SQL</text>
+    <rect x="180" y="228" width="450" height="24" rx="4" fill="#1e1e2e"/>
+    <rect x="180" y="228" width="0" height="24" rx="4" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="width" from="0" to="337.5" dur="2s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+    <text x="640" y="246" fill="#00f0ff" font-size="11" font-family="monospace" text-anchor="end" opacity="0">
+      75%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.6s" fill="freeze"/>
+    </text>
+    <text x="20" y="288" fill="#e0e0e0" font-size="12" font-family="monospace">Java</text>
+    <rect x="180" y="270" width="450" height="24" rx="4" fill="#1e1e2e"/>
+    <rect x="180" y="270" width="0" height="24" rx="4" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="width" from="0" to="270.0" dur="2s" begin="0.75s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+    <text x="640" y="288" fill="#00f0ff" font-size="11" font-family="monospace" text-anchor="end" opacity="0">
+      60%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.75s" fill="freeze"/>
+    </text>
+    <text x="20" y="330" fill="#e0e0e0" font-size="12" font-family="monospace">Rust</text>
+    <rect x="180" y="312" width="450" height="24" rx="4" fill="#1e1e2e"/>
+    <rect x="180" y="312" width="0" height="24" rx="4" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="width" from="0" to="202.5" dur="2s" begin="0.8999999999999999s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+    <text x="640" y="330" fill="#00f0ff" font-size="11" font-family="monospace" text-anchor="end" opacity="0">
+      45%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.9s" fill="freeze"/>
+    </text>
+  <text x="20" y="384" fill="#8888aa" font-size="9" font-family="monospace">7 languages tracked</text>
+</svg>

@@ -1,0 +1,12 @@
+# Everything except project files
+*
+!.gitignore
+!README.md
+!data/
+!data/*
+!scripts/
+!scripts/*
+!.github/
+!.github/**
+!assets/
+!assets/*

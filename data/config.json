@@ -1,0 +1,46 @@
+{
+  "theme": {
+    "name": "cyberpunk-terminal",
+    "colors": {
+      "background": "#0a0a0f",
+      "surface": "#12121a",
+      "border": "#1e1e2e",
+      "primary": "#00f0ff",
+      "secondary": "#ff00aa",
+      "tertiary": "#00ff88",
+      "accent": "#ffaa00",
+      "text": "#e0e0e0",
+      "text_dim": "#8888aa",
+      "glow": "#00f0ff"
+    },
+    "font": {
+      "family": "JetBrains Mono, Fira Code, monospace",
+      "size": {
+        "title": 24,
+        "subtitle": 14,
+        "body": 12,
+        "small": 10
+      }
+    }
+  },
+  "animations": {
+    "typing_speed": 50,
+    "bar_duration": 2,
+    "glow_pulse_duration": 3,
+    "scanline_duration": 8,
+    "cursor_blink": 1,
+    "reduced_motion_fallback": true
+  },
+  "github": {
+    "username": "CoreCodev618",
+    "token_secret": "GH_PAT",
+    "api_url": "https://api.github.com",
+    "graphql_url": "https://api.github.com/graphql"
+  },
+  "paths": {
+    "templates": "templates",
+    "assets": "assets",
+    "data": "data",
+    "output": "assets"
+  }
+}

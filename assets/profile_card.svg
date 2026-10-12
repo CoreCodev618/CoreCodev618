@@ -1,0 +1,325 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="720" viewBox="0 0 700 720" font-family="JetBrains Mono, Fira Code, monospace">
+  <defs>
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="1" fill="white" opacity="0.02"/>
+    </pattern>
+    <!-- Gradient for border -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#ff00aa"/>
+      <stop offset="100%" stop-color="#00ff88"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="720" fill="#0a0a0f" rx="12"/>
+
+  <!-- CRT Scanlines overlay -->
+  <rect width="700" height="720" fill="url(#scanlines)">
+    <animate attributeName="y" from="0" to="4" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Animated border -->
+  <rect x="1" y="1" width="698" height="718" rx="11" fill="none" stroke="url(#borderGrad)" stroke-width="2" filter="url(#glow)">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Header bar (terminal style) -->
+  <rect x="20" y="20" width="660" height="36" rx="8" fill="#12121a"/>
+  <circle cx="40" cy="38" r="5" fill="#ff5f56"/>
+  <circle cx="58" cy="38" r="5" fill="#ffbd2e"/>
+  <circle cx="76" cy="38" r="5" fill="#27c93f"/>
+  <text x="350" y="42" fill="#8888aa" font-size="11" font-family="monospace" text-anchor="middle">~/.config/CoreCodev</text>
+
+  <!-- Username with typing animation -->
+  
+    <text x="40" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      C
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.0s" fill="freeze"/>
+    </text>
+    <text x="54" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      o
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.08s" fill="freeze"/>
+    </text>
+    <text x="68" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      r
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.16s" fill="freeze"/>
+    </text>
+    <text x="82" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      e
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.24s" fill="freeze"/>
+    </text>
+    <text x="96" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      C
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.32s" fill="freeze"/>
+    </text>
+    <text x="110" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      o
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.4s" fill="freeze"/>
+    </text>
+    <text x="124" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      d
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.48s" fill="freeze"/>
+    </text>
+    <text x="138" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      e
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.56s" fill="freeze"/>
+    </text>
+    <text x="152" y="80" fill="#00f0ff" font-size="22" font-family="monospace" font-weight="bold" opacity="0">
+      v
+      <animate attributeName="opacity" from="0" to="1" dur="0.05" begin="0.64s" fill="freeze"/>
+    </text>
+
+  <!-- Cursor blink -->
+  <rect x="170" y="62" width="10" height="20" fill="#00f0ff">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Info section -->
+  <text x="40" y="120" fill="#e0e0e0" font-size="13" font-family="monospace" opacity="0">
+    Estudiante de Ingeniería de Sistemas (UNAC) · Desarrollo Full-Stack + IA
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.5s" fill="freeze"/>
+  </text>
+
+  <text x="40" y="140" fill="#8888aa" font-size="11" font-family="monospace" opacity="0">
+    📍 Lima, Perú
+    <animate attributeName="opacity" from="0" to="1" dur="0.5" begin="0.7s" fill="freeze"/>
+  </text>
+
+  <!-- Stats row -->
+  <g opacity="0">
+    
+    <text x="40" y="160" fill="#8888aa" font-size="10" font-family="monospace">COMMITS</text>
+    <text x="40" y="185" fill="#00f0ff" font-size="28" font-family="monospace" font-weight="bold">0</text>
+    <text x="200" y="160" fill="#8888aa" font-size="10" font-family="monospace">REPOS</text>
+    <text x="200" y="185" fill="#ff00aa" font-size="28" font-family="monospace" font-weight="bold">0</text>
+    <text x="360" y="160" fill="#8888aa" font-size="10" font-family="monospace">STARS</text>
+    <text x="360" y="185" fill="#00ff88" font-size="28" font-family="monospace" font-weight="bold">0</text>
+    <text x="520" y="160" fill="#8888aa" font-size="10" font-family="monospace">FOLLOWERS</text>
+    <text x="520" y="185" fill="#ffaa00" font-size="28" font-family="monospace" font-weight="bold">0</text>
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.3s" fill="freeze"/>
+  </g>
+
+  <!-- Languages section -->
+  <text x="40" y="300" fill="#8888aa" font-size="10" font-family="monospace" opacity="0">
+    LANGUAGES &amp; TOOLS
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.8s" fill="freeze"/>
+  </text>
+  
+    <text x="40" y="320" fill="#8888aa" font-size="11" font-family="monospace">HTML</text>
+    <rect x="160" y="310" width="300" height="12" rx="6" fill="#1e1e2e">
+      <animate attributeName="width" from="0" to="300" dur="2s" fill="freeze" />
+    </rect>
+    <rect x="160" y="310" width="0" height="12" rx="6" fill="#00f0ff">
+      <animate attributeName="width" from="0" to="270" dur="2s" begin="0.0s" fill="freeze" />
+    </rect>
+    <text x="470" y="320" fill="#00f0ff" font-size="10" font-family="monospace" opacity="0">
+      90%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.0s" fill="freeze" />
+    </text>
+    <text x="40" y="348" fill="#8888aa" font-size="11" font-family="monospace">Python</text>
+    <rect x="160" y="338" width="300" height="12" rx="6" fill="#1e1e2e">
+      <animate attributeName="width" from="0" to="300" dur="2s" fill="freeze" />
+    </rect>
+    <rect x="160" y="338" width="0" height="12" rx="6" fill="#00f0ff">
+      <animate attributeName="width" from="0" to="255" dur="2s" begin="0.1s" fill="freeze" />
+    </rect>
+    <text x="470" y="348" fill="#00f0ff" font-size="10" font-family="monospace" opacity="0">
+      85%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.1s" fill="freeze" />
+    </text>
+    <text x="40" y="376" fill="#8888aa" font-size="11" font-family="monospace">CSS</text>
+    <rect x="160" y="366" width="300" height="12" rx="6" fill="#1e1e2e">
+      <animate attributeName="width" from="0" to="300" dur="2s" fill="freeze" />
+    </rect>
+    <rect x="160" y="366" width="0" height="12" rx="6" fill="#00f0ff">
+      <animate attributeName="width" from="0" to="246" dur="2s" begin="0.2s" fill="freeze" />
+    </rect>
+    <text x="470" y="376" fill="#00f0ff" font-size="10" font-family="monospace" opacity="0">
+      82%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.2s" fill="freeze" />
+    </text>
+    <text x="40" y="404" fill="#8888aa" font-size="11" font-family="monospace">JavaScript</text>
+    <rect x="160" y="394" width="300" height="12" rx="6" fill="#1e1e2e">
+      <animate attributeName="width" from="0" to="300" dur="2s" fill="freeze" />
+    </rect>
+    <rect x="160" y="394" width="0" height="12" rx="6" fill="#00f0ff">
+      <animate attributeName="width" from="0" to="234" dur="2s" begin="0.30000000000000004s" fill="freeze" />
+    </rect>
+    <text x="470" y="404" fill="#00f0ff" font-size="10" font-family="monospace" opacity="0">
+      78%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.3s" fill="freeze" />
+    </text>
+    <text x="40" y="432" fill="#8888aa" font-size="11" font-family="monospace">SQL</text>
+    <rect x="160" y="422" width="300" height="12" rx="6" fill="#1e1e2e">
+      <animate attributeName="width" from="0" to="300" dur="2s" fill="freeze" />
+    </rect>
+    <rect x="160" y="422" width="0" height="12" rx="6" fill="#00f0ff">
+      <animate attributeName="width" from="0" to="225" dur="2s" begin="0.4s" fill="freeze" />
+    </rect>
+    <text x="470" y="432" fill="#00f0ff" font-size="10" font-family="monospace" opacity="0">
+      75%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.4s" fill="freeze" />
+    </text>
+    <text x="40" y="460" fill="#8888aa" font-size="11" font-family="monospace">Java</text>
+    <rect x="160" y="450" width="300" height="12" rx="6" fill="#1e1e2e">
+      <animate attributeName="width" from="0" to="300" dur="2s" fill="freeze" />
+    </rect>
+    <rect x="160" y="450" width="0" height="12" rx="6" fill="#00f0ff">
+      <animate attributeName="width" from="0" to="180" dur="2s" begin="0.5s" fill="freeze" />
+    </rect>
+    <text x="470" y="460" fill="#00f0ff" font-size="10" font-family="monospace" opacity="0">
+      60%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.5s" fill="freeze" />
+    </text>
+    <text x="40" y="488" fill="#8888aa" font-size="11" font-family="monospace">Rust</text>
+    <rect x="160" y="478" width="300" height="12" rx="6" fill="#1e1e2e">
+      <animate attributeName="width" from="0" to="300" dur="2s" fill="freeze" />
+    </rect>
+    <rect x="160" y="478" width="0" height="12" rx="6" fill="#00f0ff">
+      <animate attributeName="width" from="0" to="135" dur="2s" begin="0.6000000000000001s" fill="freeze" />
+    </rect>
+    <text x="470" y="488" fill="#00f0ff" font-size="10" font-family="monospace" opacity="0">
+      45%
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.6s" fill="freeze" />
+    </text>
+
+  <!-- Soft skills -->
+  <text x="40" y="510" fill="#8888aa" font-size="10" font-family="monospace" opacity="0">
+    SOFT SKILLS
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.2s" fill="freeze"/>
+  </text>
+  
+    <rect x="40" y="516" width="150" height="22" rx="11" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.7"/>
+    <text x="115" y="530" fill="#00ff88" font-size="10" font-family="monospace" text-anchor="middle" opacity="0">
+      Innovación
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.0s" fill="freeze"/>
+    </text>
+    <rect x="200" y="516" width="150" height="22" rx="11" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.7"/>
+    <text x="275" y="530" fill="#00ff88" font-size="10" font-family="monospace" text-anchor="middle" opacity="0">
+      Creatividad
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.15s" fill="freeze"/>
+    </text>
+    <rect x="360" y="516" width="150" height="22" rx="11" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.7"/>
+    <text x="435" y="530" fill="#00ff88" font-size="10" font-family="monospace" text-anchor="middle" opacity="0">
+      Disciplina
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.3s" fill="freeze"/>
+    </text>
+    <rect x="40" y="546" width="150" height="22" rx="11" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.7"/>
+    <text x="115" y="560" fill="#00ff88" font-size="10" font-family="monospace" text-anchor="middle" opacity="0">
+      Autonomía
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.45s" fill="freeze"/>
+    </text>
+    <rect x="200" y="546" width="150" height="22" rx="11" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.7"/>
+    <text x="275" y="560" fill="#00ff88" font-size="10" font-family="monospace" text-anchor="middle" opacity="0">
+      Adaptabilidad
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.6s" fill="freeze"/>
+    </text>
+
+  <!-- Full stack badges -->
+  <text x="40" y="590" fill="#8888aa" font-size="10" font-family="monospace" opacity="0">
+    FULL STACK
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.4s" fill="freeze"/>
+  </text>
+  
+    <rect x="40" y="598" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="102" y="612" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      Python
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="1.5s" fill="freeze"/>
+    </text>
+    <rect x="175" y="598" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="237" y="612" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      JavaScript
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="1.58s" fill="freeze"/>
+    </text>
+    <rect x="310" y="598" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="372" y="612" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      Rust
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="1.66s" fill="freeze"/>
+    </text>
+    <rect x="445" y="598" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="507" y="612" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      HTML
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="1.74s" fill="freeze"/>
+    </text>
+    <rect x="40" y="626" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="102" y="640" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      CSS
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="1.82s" fill="freeze"/>
+    </text>
+    <rect x="175" y="626" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="237" y="640" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      SQL
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="1.9s" fill="freeze"/>
+    </text>
+    <rect x="310" y="626" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="372" y="640" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      React
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="1.98s" fill="freeze"/>
+    </text>
+    <rect x="445" y="626" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="507" y="640" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      Ember
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.06s" fill="freeze"/>
+    </text>
+    <rect x="40" y="654" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="102" y="668" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      HTML
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.14s" fill="freeze"/>
+    </text>
+    <rect x="175" y="654" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="237" y="668" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      CSS
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.2199999999999998s" fill="freeze"/>
+    </text>
+    <rect x="310" y="654" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="372" y="668" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      PostgreSQL
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.3s" fill="freeze"/>
+    </text>
+    <rect x="445" y="654" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="507" y="668" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      MySQL
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.38s" fill="freeze"/>
+    </text>
+    <rect x="40" y="682" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="102" y="696" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      SQL Server
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.46s" fill="freeze"/>
+    </text>
+    <rect x="175" y="682" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="237" y="696" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      AWS Glue
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.54s" fill="freeze"/>
+    </text>
+    <rect x="310" y="682" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="372" y="696" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      LakeHouse
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.62s" fill="freeze"/>
+    </text>
+    <rect x="445" y="682" width="125" height="20" rx="10" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5"/>
+    <text x="507" y="696" fill="#e0e0e0" font-size="9" font-family="monospace" text-anchor="middle" opacity="0">
+      Athena
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.4" begin="2.7s" fill="freeze"/>
+    </text>
+
+  <!-- Footer -->
+  <text x="40" y="700" fill="#8888aa" font-size="9" font-family="monospace" opacity="0">
+    Generated by CoreCodev Auto-Builder · 2026-10-12 00:43 UTC
+    <animate attributeName="opacity" from="0" to="0.6" dur="0.5s" begin="2.5s" fill="freeze"/>
+  </text>
+
+  <!-- Accessibility: respect reduced motion -->
+  <animateMotion>
+    <mpath href="#none"/>
+  </animateMotion>
+</svg>
